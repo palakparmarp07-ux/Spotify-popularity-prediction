@@ -24,7 +24,7 @@ Can a song's popularity be predicted from its acoustic characteristics — dance
 
 ## Key Findings (EDA)
 
-![Distribution of track popularity, right-skewed with most tracks scoring low](images/popularity_distribution.png)
+![Distribution of track popularity, right-skewed with most tracks scoring low]![...](popularity_distribution.png)
 
 Most tracks cluster at low popularity, with relatively few high-popularity outliers — part of why predicting exact popularity is inherently hard.
 
