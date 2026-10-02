@@ -40,13 +40,13 @@ Most tracks cluster at low popularity, with relatively few high-popularity outli
   | Acousticness | -0.039 |
   | Instrumentalness | -0.127 |
 
-![Bar chart of audio feature correlations with popularity, all clustered near zero](images/feature_correlations.png)
+![Bar chart of audio feature correlations with popularity, all clustered near zero](feature_correlations.png)
 
 - **`mode` (major vs. minor key)** showed a negligible difference in average popularity (33.6 vs 32.9) — not practically meaningful despite being "statistically" different.
 
 - **Genre is the dominant factor.** Average popularity by genre ranges from ~59 (k-pop, pop-film) down to ~2 (iranian) — a ~57-point spread, dwarfing every audio feature tested. This likely reflects external factors genre acts as a proxy for: K-pop's famously active fan-streaming culture, and pop-film's built-in marketing tie-ins — not the music's acoustic properties.
 
-![Top 10 and bottom 10 genres by average popularity](images/genre_popularity.png)
+![Top 10 and bottom 10 genres by average popularity](genre_popularity.png)
 
 ## Modeling
 
@@ -60,7 +60,7 @@ Genre was encoded using **target/mean encoding** (each genre replaced with its a
 
 Random Forest outperformed Linear Regression, suggesting non-linear and conditional relationships in the data (e.g. a feature's effect may depend on genre) that a straight-line model can't capture. Feature importance confirmed `genre_encoded` as the dominant predictor, consistent with the EDA findings.
 
-![Feature importance from Random Forest, genre_encoded far ahead of audio features](images/feature_importance.png)
+![Feature importance from Random Forest, genre_encoded far ahead of audio features](feature_importance.png)
 
 ## Error Analysis
 
